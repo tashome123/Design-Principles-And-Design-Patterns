@@ -1,11 +1,19 @@
 package Liskov_Substitution.Fails;
 
-import Liskov_Substitution.Shows.Bird;
-
 public class Main {
     public static void main(String[] args) {
-        Liskov_Substitution.Shows.Bird sparrow = new Sparrow();
-        Bird penguin = new Penguin();
+        Sparrow sparrow = new Sparrow() {
+            @Override
+            public void makeSound() {
+
+            }
+        };
+        Penguin penguin = new Penguin() {
+            @Override
+            public void makeSound() {
+
+            }
+        };
 
         sparrow.fly();
         penguin.fly();

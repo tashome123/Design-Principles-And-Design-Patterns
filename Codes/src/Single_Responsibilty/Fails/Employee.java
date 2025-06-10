@@ -1,5 +1,8 @@
 package Single_Responsibilty.Fails;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Employee {
     private String name;
     private String position;

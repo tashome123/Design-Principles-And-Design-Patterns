@@ -2,7 +2,7 @@ package Liskov_Substitution.Fails;
 
 import Liskov_Substitution.Shows.Bird;
 
-public class Penguin extends Bird {
+public abstract class Penguin extends Bird {
     @Override
     public void fly() {
         // Penguins can't fly

@@ -6,7 +6,12 @@ public class Main {
         sparrow.fly();
         sparrow.makeSound();
 
-        Bird penguin = new Penguin();
+        Bird penguin = new Penguin() {
+            @Override
+            public void fly() {
+
+            }
+        };
         penguin.makeSound();
 
 

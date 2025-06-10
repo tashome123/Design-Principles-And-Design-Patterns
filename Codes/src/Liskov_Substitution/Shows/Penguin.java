@@ -1,6 +1,6 @@
 package Liskov_Substitution.Shows;
 
-public class Penguin extends Bird {
+public abstract class Penguin extends Bird {
     @Override
     public void makeSound() {
         System.out.println("Honk honk!");
